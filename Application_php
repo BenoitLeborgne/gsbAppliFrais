@@ -1,3 +1,40 @@
-<?php echo "test"; ?>
+<?php require_once 'header.php'; ?>
 
-<h1>Hél</h1>
+<div class="container">
+    <form action="traitement_connexion.php" method="POST">
+        <!--<div class="form-group">
+            <label>Pseudo</label>
+            <input type="text" name="pseudo" value ="" size ="30" maxlength="20" required/>
+        </div>
+        <div class="form-group">
+            <label>Mot de passe</label>
+            <input type="password" name="motdepasse" value ="" size ="30" maxlength="20" required/>
+        </div>
+        <div class="form-group">
+            <div class="g-recaptcha" data-sitekey="6LfvX0MUAAAAAN_ljjBPs5VHHsp_V4hO6rHwulYV">
+            </div>
+        </div>
+        <div class="form-group">
+            <input type="submit" name="soumettre" value="Log In" />
+        </div>
+        <a href="forgotPassword.php">Mot de passe oublié ?</a>-->
+
+  <div class="form-group">
+    <h4><span class="badge badge-primary">Pseudo</span></h4>
+    <input type="text" class="form-control" id="exampleInputEmail1" name = "pseudo" aria-describedby="emailHelp" placeholder="Entrez votre pseudo">
+
+  </div>
+    <div class="form-group">
+  <h4><span class="badge badge-primary">Password</span></h4>
+  <input type="password" class="form-control" id="exampleInputPassword1" name = "motdepasse" placeholder="Entrez votre mot de passe">
+</div>
+<div class="form-group">
+    <div class="g-recaptcha" data-sitekey="6LfvX0MUAAAAAN_ljjBPs5VHHsp_V4hO6rHwulYV">
+    </div>
+</div>
+<button type="submit" class="btn btn-primary">Valider</button>
+<a href="forgotPassword.php">Mot de passe oublié ?</a>
+</form>
+
+</div>
+<?php require_once 'footer.php'; ?>
